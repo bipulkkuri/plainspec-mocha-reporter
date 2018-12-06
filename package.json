@@ -1,6 +1,6 @@
 {
   "name": "plainspec-mocha-reporter",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A simple mocha-reporter for console useful when testing async calls.",
   "main": "index.js",
   "scripts": {

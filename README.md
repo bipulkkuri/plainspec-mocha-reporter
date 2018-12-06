@@ -15,6 +15,14 @@ Save it as dev dependency in your project
 or
 
 Do a `npm install` after `plainspec-mocha-reporter` as `devDependencies` to your `package.json` file
+```
+//package.json
+"devDependencies": {
+  ..
+  "plainspec-mocha-reporter": "^1.0.0",
+  ..
+}
+```
 
 Usage
 =====
@@ -40,6 +48,17 @@ in `package.json` in script section add
   },
 ..
 ```   
+
+Full configuration options
+==============
+| Parameter | Effect |
+| --------- | ------ |
+| startMessage | Starting Message (defaults to 'Release') |
+| suitePad | Padding used between suits,pass,fail (defaults to ' ') |
+| rootMessage | The report name  (defaults to ' Mocha Custom Report ') |
+| padCount | Padding for the char in padChar. (defaults to '26') |
+| padChar | The char (defaults to '=') |
+
 
 Example output
 ==============
@@ -160,18 +179,6 @@ Result: Release not possible
 
 ========================== Mocha Custom Report ==========================
 ```
-
-### Full configuration options
-
-| Parameter | Effect |
-| --------- | ------ |
-| startMessage | Starting Message (defaults to 'Release') |
-| suitePad | padding used between suits,pass,fail (defaults to ' ') |
-| rootMessage | set to a truthy value to (defaults to ' Mocha Custom Report ') |
-| padCount | padding for the char in padChar. (defaults to '26') |
-| padChar | the char (defaults to '=') |
-
-
 
 Support
 ===============
