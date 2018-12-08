@@ -50,7 +50,7 @@ in `package.json` in script section add
 ```   
 Features and Differences
 ==============
-`node_modules/mocha/bin/_mocha --reporter index  test/http*.js --exit --reporter-options epilogue`
+`node_modules/mocha/bin/_mocha --reporter plainspec-mocha-reporter  test/http*.js --exit --reporter-options epilogue`
 
 ![Screenshot](https://github.com/bipulkkuri/plainspec-mocha-reporter/blob/master/images/plainspec.png)
 
