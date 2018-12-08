@@ -5,7 +5,7 @@ plainspec-mocha-reporter
 plainspec reporter for Mocha.
 
 The plainspec-mocha-reporter is a reporter for mocha.  
-Useful for scenarios when async calls are logged so that console is clean for test report.
+Useful for scenarios when async calls are logged so that console is clean for test report and view.
 
 Installation
 =====
@@ -48,6 +48,17 @@ in `package.json` in script section add
   },
 ..
 ```   
+Features and Differences
+==============
+`node_modules/mocha/bin/_mocha --reporter index  test/http*.js --exit --reporter-options epilogue`
+
+![Screenshot](https://github.com/bipulkkuri/plainspec-mocha-reporter/blob/master/images/plainspec.png)
+
+vs
+
+`node_modules/mocha/bin/_mocha --reporter plainspec-mocha-reporter  test/http*.js --exit --reporter-options`
+
+![Screenshot](https://github.com/bipulkkuri/plainspec-mocha-reporter/blob/master/images/spec.png)
 
 Full configuration options
 ==============
@@ -58,6 +69,7 @@ Full configuration options
 | rootMessage | The report name  (defaults to ' Mocha Custom Report ') |
 | padCount | Padding for the char in padChar. (defaults to '26') |
 | padChar | The char (defaults to '=') |
+| epilogue | enable disable epilogue (defaults to false) |
 
 
 Example output

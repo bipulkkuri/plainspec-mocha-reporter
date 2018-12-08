@@ -1,7 +1,7 @@
 "use strict";
 var chai = require("chai");
 var should = chai.should();
-//test hello
+
 describe("#Fly", function() {
   it("should return weapons ready", function() {
     let test = "weapons ready";

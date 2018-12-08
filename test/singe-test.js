@@ -1,7 +1,7 @@
 "use strict";
 var chai = require("chai");
 var should = chai.should();
-//test hello
+
 describe("#Fleet Ready", function() {
   it("should be Fueled", function() {
     let test = "Fueled";

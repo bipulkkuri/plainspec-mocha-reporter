@@ -30,6 +30,7 @@ function plainspecReporter(runner, options) {
   options.rootMessage = reporterOptions.rootMessage || " Mocha Custom Report ";
   options.padCount = reporterOptions.padCount || 26;
   options.padChar = reporterOptions.padChar || "=";
+  options.epilogue = reporterOptions.epilogue || false;
 
   function indent() {
     return Array(indents).join(options.suitePad);
@@ -102,6 +103,9 @@ function plainspecReporter(runner, options) {
 
   function parseResultArray(value) {
     console.log("%s", value);
+  }
+  if (options.epilogue) {
+    runner.once("end", this.epilogue.bind(this));
   }
 }
 
