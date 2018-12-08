@@ -56,7 +56,7 @@ Features and Differences
 
 vs
 
-`node_modules/mocha/bin/_mocha --reporter plainspec-mocha-reporter  test/http*.js --exit --reporter-options`
+`node_modules/mocha/bin/_mocha --reporter spec  test/http*.js --exit --reporter-options`
 
 ![Screenshot](https://github.com/bipulkkuri/plainspec-mocha-reporter/blob/master/images/spec.png)
 
