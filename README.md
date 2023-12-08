@@ -19,7 +19,7 @@ Do a `npm install` after `plainspec-mocha-reporter` as `devDependencies` to your
 //package.json
 "devDependencies": {
   ..
-  "plainspec-mocha-reporter": "^1.0.3",
+  "plainspec-mocha-reporter": "^1.0.9",
   ..
 }
 ```
